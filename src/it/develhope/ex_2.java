@@ -66,3 +66,4 @@ private static void exercise2() {
 
         };
     }
+
