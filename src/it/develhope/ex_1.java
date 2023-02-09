@@ -24,7 +24,7 @@ public class ex_1 {
     public static void exercise2() {
         System.out.println("\nExercise 2: ");
         System.out.print("Hello");
-        System.out.println(" Rem");
+        System.out.println("Rem");
         //Write code underneath this
 
         //Write code above this
