@@ -52,16 +52,18 @@ public class ex_9 {
         String shoeType = "fancy";
 
 
-        int age = 30;
-        double eurosInPocket = 73.5;
+        int age = 3;
+        double eurosInPocket = 17.5;
         double eurosForEntry = 10; // E questa a cosa serve??
 
         // Write your code here
-        boolean fancyShoe = shoeType.equals("fancy");
+
+
         boolean majorAge = age >= 18;
         boolean tenEuroInPocket = eurosInPocket >= 10;
 
-        if (fancyShoe && majorAge && tenEuroInPocket) {
+
+        if (shoeType.equals("fancy") && majorAge && tenEuroInPocket ) {
             System.out.println("Come in");
         } else {
             System.out.println("Stay out");
