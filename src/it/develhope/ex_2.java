@@ -16,13 +16,13 @@ public class ex_2 {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
-        String r = new String("Remus");
-        String g = new String("Gosav");
-        String x = new String("X");
+        char r = 'r';
+        char g = 'g';
+        char x = 'x';
      //   char ch1;
      //  ch1 = 88;
-        System.out.print(r.charAt(0));
-        System.out.print(g.charAt(0));
+        System.out.print(r);
+        System.out.print(g);
         System.out.println(x);
         // This line will print X
        // System.out.print(ch1);
