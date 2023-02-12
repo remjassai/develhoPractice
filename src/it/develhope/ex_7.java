@@ -38,14 +38,14 @@ public class ex_7 {
     private static void exercise2() {
         System.out.println("\nExercise 2a:");
         char ourChar = 'a';
-        String ourCharString = "jassai!".toUpperCase(); // <--- Change this line
+        String ourCharString = String.valueOf(ourChar).toUpperCase(); // <--- Change this line
         // Notice below what happens, the `charAt()` method
         System.out.println(ourCharString.charAt(0));
 
         System.out.println("\nExercise 2b:");
         String anotherString = "Hello world";
-        int charAtIndex = 0; // <--- Change this line
-        System.out.println("Make this print 'w' -> current result: '" + anotherString.charAt(charAtIndex = 6) + "'");
+        int charAtIndex = 6; // <--- Change this line
+        System.out.println("Make this print 'w' -> current result: '" + anotherString.charAt(charAtIndex) + "'");
     }
 
 
@@ -95,4 +95,5 @@ public class ex_7 {
 
 
     }
+
 }
