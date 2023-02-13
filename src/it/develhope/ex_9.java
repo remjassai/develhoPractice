@@ -52,8 +52,8 @@ public class ex_9 {
         String shoeType = "fancy";
 
 
-        int age = 3;
-        double eurosInPocket = 17.5;
+        int age = 30;
+        double eurosInPocket = 7.5;
         double eurosForEntry = 10; // E questa a cosa serve??
 
         // Write your code here
