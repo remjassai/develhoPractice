@@ -35,7 +35,7 @@ public class Exercises {
         Student Frankie = new Student(23);
         Student Lolo = new Student("Lolo");
         Student newOneStud = new Student();
-        System.out.println("I am made by 3 new Student objects "+ Frankie + ", " + Lolo + ", and " + newOneStud + " respectively.");
+        System.out.println("I am made by 3 new Student objects: "+ Frankie + ", " + Lolo + ", and " + newOneStud + " respectively.");
     }
 
     /**
