@@ -32,6 +32,7 @@ public class Exercises {
             students.add(student);
             System.out.println("Student " + student);
         }
+        students.forEach(System.out::println);
         Student Frankie = new Student(23);
         Student Lolo = new Student("Lolo");
         Student newOneStud = new Student();
@@ -56,5 +57,6 @@ public class Exercises {
          new Student(33),
          new Student()
         );
+         students.forEach(System.out::println);
     }
 }
