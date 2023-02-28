@@ -18,10 +18,13 @@ public class Exercises {
      */
     public static void exercise1() {
         System.out.println("Exercise 1:");
+        int luckyRolls = 0;
+        int totalCount = 0;
         for (int i = 0; i < 100; i++) {
             while (rollD6() == 6) {
                 luckyRolls++;
             }
+
             totalCount += luckyRolls;
             luckyRolls = 0;
         }
@@ -33,8 +36,7 @@ public class Exercises {
     private static final int DAYS_PER_WEEK = 7;
     private static final int HOURS_PER_DAY = 24;
     private static Random random = new Random();
-    private static int luckyRolls = 0;
-    private static int totalCount = 0;
+
     private static int rollD6() {
         return random.nextInt(6) + 1;
     }
@@ -78,9 +80,6 @@ public class Exercises {
 
 
         for (int week = 0; week < WEEKS_PER_YEAR; week++) {
-            if(week > 0){
-                break;
-            }
             for (int day = 0; day < DAYS_PER_WEEK; day++) {
                 for (int hour = 0; hour < HOURS_PER_DAY; hour++) {
                     System.out.println("Week " + week +", day " + day +", hour " + hour);
