@@ -1,4 +1,4 @@
-package classExercise;
+package JavaOOP.classExercise;
 
 import java.util.Arrays;
 import java.util.List;

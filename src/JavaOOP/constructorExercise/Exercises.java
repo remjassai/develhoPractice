@@ -1,4 +1,4 @@
-package constructorExercise;
+package JavaOOP.constructorExercise;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package Encapsulation;
+package JavaOOP.encapsulation;
 
 public class Exercises {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class Exercises {
         System.out.println("His favorite phrase is "+rem.getFavoritePhrase());
         System.out.println("Student "+greg.getName()+" is "+greg.getAge()+" years old.");
         System.out.println("His favorite phrase is "+greg.getFavoritePhrase());
-        System.out.println("His ID number is: "+greg.getId() +" and he comes from: "+greg.getNationality());
+        System.out.println("His ID number is: "+greg.getId() +" and he comes from: " + greg.getNationality());
 
 
 

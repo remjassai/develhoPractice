@@ -1,4 +1,4 @@
-package finalScopeStaticAccessModifiers;
+package JavaOOP.finalScopeStaticAccessModifiers;
 
  public class ExerciseLunch {
     private Double price = null;

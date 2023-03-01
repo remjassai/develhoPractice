@@ -1,4 +1,4 @@
-package constructorExercise;
+package JavaOOP.constructorExercise;
 
 public class Student {
         public String name;
