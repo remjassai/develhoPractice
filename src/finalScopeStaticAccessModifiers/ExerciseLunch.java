@@ -19,11 +19,10 @@ package finalScopeStaticAccessModifiers;
     public ExerciseLunch(Double price, String nameOfDayEaten) {
         this.price = price;
         this.nameOfDayEaten = nameOfDayEaten;
-
     }
 
     public static void printMaxPrice() {
-        System.out.println(MAX_PRICE);
+        System.out.println("The value of the max price is: " + MAX_PRICE);
     }
 
     public void printLunch() {
@@ -36,14 +35,14 @@ package finalScopeStaticAccessModifiers;
 
     public void setPrice(double price) {
         if (price > MAX_PRICE || price < MIN_PRICE) {
-            System.out.println("Cannot set greater than: "+ MAX_PRICE + " or less than: " + MIN_PRICE);
+            System.out.println("The price cannot be set as greater than: "+ MAX_PRICE + " or less than: " + MIN_PRICE);
         } else {
             this.price = price;
         }
     }
 
     public Double getPrice() {
-        numberOfTimesWeHaveGotPrice = numberOfTimesWeHaveGotPrice + 1;
+        numberOfTimesWeHaveGotPrice += 1;
         return this.price;
     }
 
@@ -70,9 +69,11 @@ package finalScopeStaticAccessModifiers;
 
     public void setLunchWeightInGrams(int lunchWeightInGrams) {
         if(lunchWeightInGrams > MAX_WEIGHT || lunchWeightInGrams < MIN_WEIGHT){
-            System.out.println("Cannot set greater than max weight or less than min weight");
+            System.out.println("Weight cannot be set as greater than max weight in grams: "+ MAX_WEIGHT +" or less than min weight in grams: "+ MIN_WEIGHT);
+        }else{
+            this.lunchWeightInGrams = lunchWeightInGrams;
         }
-        this.lunchWeightInGrams = lunchWeightInGrams;
+
     }
 
     public void setNumberOfTimesWeHaveGotPrice(int numberOfTimesWeHaveGotPrice) {

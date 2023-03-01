@@ -1,6 +1,5 @@
 package finalScopeStaticAccessModifiers;
 
-import finalScopeStaticAccessModifiers.ExerciseLunch;
 
 import java.util.Random;
 
@@ -51,6 +50,8 @@ public class Exercises {
         ExerciseLunch exerciseLunch = new ExerciseLunch(3.4, "Tuesday");
         exerciseLunch.setPrice(7);
         exerciseLunch.setLunchWeightInGrams(500);
+        System.out.println("Lunch weight has just been set to: " + exerciseLunch.getLunchWeightInGrams() + " grams.");
+        exerciseLunch.setLunchWeightInGrams(600);
         System.out.println("Lunch on " + exerciseLunch.getNameOfDayEaten() + " cost " + exerciseLunch.getPrice());
     }
 
@@ -63,8 +64,11 @@ public class Exercises {
         System.out.println("\nExercise 3:");
         ExerciseLunch exerciseLunch = null;
         exerciseLunch = new ExerciseLunch(3.4, "Tuesday");
-        exerciseLunch.setPrice(7);
-        exerciseLunch.setLunchWeightInGrams(500);
+        exerciseLunch.getPrice();
+        exerciseLunch.getNumberOfTimesWeHaveGotPrice();
+        exerciseLunch.setNameOfDayEaten("Wednesday");
+        exerciseLunch.setNumberOfTimesWeHaveGotPrice(2);
+        exerciseLunch.printLunch();
         ExerciseLunch.printMaxPrice();
     }
 
