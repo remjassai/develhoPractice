@@ -1,4 +1,4 @@
-package JavaOOP.encapsulation;
+package javaOOP.encapsulation;
 
 public class Student {
     private static int idTotal = 0;

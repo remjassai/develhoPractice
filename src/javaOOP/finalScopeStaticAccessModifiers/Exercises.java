@@ -1,4 +1,4 @@
-package JavaOOP.finalScopeStaticAccessModifiers;
+package javaOOP.finalScopeStaticAccessModifiers;
 
 
 import java.util.Random;
