@@ -119,10 +119,8 @@ public class Exercises {
         Set<Integer> itemsContainedInBothSets = new HashSet<>();
 
         for (Integer item : setA) {
-            for (Integer item2 : setB) {
-            if (item2.equals(item)) {
-                itemsContainedInBothSets.add(item2);
-            }
+            if (setB.contains(item)) {
+                itemsContainedInBothSets.add(item);
             }
                                                                             // Your code
         }
