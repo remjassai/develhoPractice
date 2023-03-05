@@ -34,7 +34,7 @@ public class Team {
 
     public void printTheBrave(){
         for (FootballPlayer p : this.players) {
-            if(p.getGolsNumber()>5 && p.getAssistsNumber()>7 && p.getPresencesNumber()>20){
+            if((p.getGolsNumber()>5 || p.getAssistsNumber()>7) && p.getPresencesNumber()>20){
                 System.out.println(
                         p.getName() + " " + p.getSurname()
                 );

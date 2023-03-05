@@ -15,8 +15,17 @@ public class Main {
 
         HashSet<FootballPlayer> stoix = new HashSet<>();
         stoix.add(robert);
+        robert.setAssistsNumber(7);
+        robert.setGolsNumber(32);
+        robert.setPresencesNumber(29);
         stoix.add(rem);
+        rem.setAssistsNumber(9);
+        rem.setGolsNumber(12);
+        rem.setPresencesNumber(25);
         stoix.add(marco);
+        marco.setAssistsNumber(12);
+        marco.setGolsNumber(33);
+        marco.setPresencesNumber(21);
 
         Team teamA = new Team("Stoix", stoix);
 
@@ -31,9 +40,9 @@ public class Main {
         teamC.addPlayer(jane);
 
         teamC.scoreResult().forEach((player, score) -> {
-//            if (score > 0.6 ) {
+            if (score > 0.6 ) {
                 System.out.println(player.getName() + " : " + score);
-//            };
+            };
         });
 
 
