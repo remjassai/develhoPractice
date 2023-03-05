@@ -10,6 +10,7 @@ public class FootballPlayer {
     private int presencesNumber;
     private int golsNumber;
     private int assistsNumber;
+    private Team team;
 
 
 
@@ -56,7 +57,10 @@ public class FootballPlayer {
         return assistsNumber;
     }
 
-    //setters
+    public Team getTeam() {
+        return team;
+    }
+//setters
 
     public void setPresencesNumber(int presencesNumber) {
         this.presencesNumber = presencesNumber;
@@ -70,14 +74,21 @@ public class FootballPlayer {
         this.assistsNumber = assistsNumber;
     }
 
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
+
 
     //methods
 
     // Calculate how incisive a player is on the field.
     public double score() {
-        return (golsNumber + (0.75*assistsNumber))/presencesNumber;
+        return (this.golsNumber + (0.75*this.assistsNumber))/this.presencesNumber;
     }
-    @Override
+
+
+/*    @Override
     public String toString() {
         return "FootballPlayer{" +
                 "id=" + id +
@@ -87,5 +98,5 @@ public class FootballPlayer {
                 ", goalsNumber=" + golsNumber +
                 ", assistsNumber=" + assistsNumber +
                 '}';
-    }
+    }*/
 }

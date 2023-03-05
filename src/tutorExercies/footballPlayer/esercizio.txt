@@ -52,7 +52,7 @@ Number of appearances
 Number of goals scored
 Number of assists
 
-Implement a constructor with all arguments and a constructor that sets only id, first name and last name.
+Implement a constructor with all arguments and a constructor that sets first name and last name.
 Also write the getter for each attribute
 and a setter only for attendance, goals and assists.
 
@@ -64,7 +64,8 @@ Id
 Name
 The set of players in the team.
 Set up a constructor so that it initializes id and name, initializing the set of players empty,
-and another constructor that also takes a set of players as a parameter instead.
+and
+another constructor that also takes a set of players as a parameter instead.
 Also add in the FootballPlayer class the team in which it plays as an attribute,
 with corresponding getters and setters.
 Finally, implement the following method:
