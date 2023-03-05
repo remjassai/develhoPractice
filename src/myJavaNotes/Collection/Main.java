@@ -1,5 +1,9 @@
-/*
 package myJavaNotes.Collection;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,11 +16,11 @@ public class Main {
         menu.put("Fries", new Meal(3.50, 250, Set.of("Potato", "Loads of oil")));
         menu.put("Pizza", new Meal(10.0, 750, Set.of("Dough", "Cheese", "Tomato", "Toppings")));
 
-        Set<Meal> burgers = new HashSet<>();
-        burgers.add(beefBurger);
-        burgers.add(cheeseBurger);
-        System.out.println(burgers);
-
+        Set<Meal> burgersTypes = new HashSet<>();
+        burgersTypes.add(beefBurger);
+        burgersTypes.add(cheeseBurger);
+        System.out.println(burgersTypes);
+        System.out.println(menu.keySet());
     }
 
 
@@ -24,4 +28,3 @@ public class Main {
 
 
 }
-*/

@@ -92,40 +92,40 @@ public class Exercises {
      *    and explain why you chose that data structure.
      *
      *    1 - You want to store the students in order of their arrival
-     *    Answer: List
+     *    Answer: List because it adds the students to the end of the list.
      *
      *    2 - You want to store the students in a class and their grades
-     *    Answer: Maps
+     *    Answer: Map because it adds key value pairs.
      *
      *    3 - You want to store the countries in the world in order of age
-     *    Answer: TreeMap
+     *    Answer: TreeMap and you put the age as key and the country as value.
      *
      *    4 - You want to store the products available for purchase in an online store, along with their corresponding prices.
-     *    Answer: HashM
+     *    Answer: HashMap because it adds key value pairs in no particular order.
      *
      *    5 - You want to store the employees at a company in the order you added them
-     *    Answer: LinkedSet
+     *    Answer: LinkedHashSet because it adds the employees to the end of the list.
      *
      *    6 - You want to store the cities in a particular state, along with their populations.
-     *    Answer: Map
+     *    Answer: Map because it adds key value pairs in no particular order.
      *
      *    7 - You want to store the books in a library, along with their authors and publication dates.
-     *    Answer: Set
+     *    Answer: Map because it adds key value pairs in no particular order and accepts duplicates.
      *
      *    8 - You want to store the courses offered at a university, along with the professors teaching each course.
-     *    Answer:
+     *    Answer: Map because you can't repeat keys but a key can reference duplicate values.
      *
      *    9 - You want to store the movies in a movie rental store, along with their ratings and release dates.
-     *    Answer:
+     *    Answer: HashMap
      *
      *    10 - You want to store the flights available for booking on an airline, along with their destinations and departure times.
-     *    Answer:
+     *    Answer:ArrayList because fly number may repeat.
      *
      *    11 - You want to store the articles on a news website, along with their titles and publication dates.
-     *    Answer:
+     *    Answer: LinkedList or TreeList because with the TreeList you can order them how you chose but with LinkedList in order of arrival.
      *
      *    12 - You want to store the songs in a music streaming service, along with their artists and album names.
-     *    Answer:
+     *    Answer:  LinkedList or TreeList.
      */
 
 }

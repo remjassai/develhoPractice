@@ -1,13 +1,16 @@
-/*
 package myJavaNotes.Collection;
+
+import com.sun.source.doctree.SeeTree;
+
+import java.util.Set;
 
 public class Meal {
     private Double price;
     private Integer weightInGrams;
     private Set<String>ingredients;
-    public Meal(Double price, Inreger weightInGrams, Set<String>ingredients) {
+    public Meal(Double price, Integer weightInGrams, Set<String> ingredients) {
         this.price = price;
-        this.weightInGrms = weight;
+        this.weightInGrams = weightInGrams;
         this.ingredients = ingredients;
     }
     public Double getPrice() {
@@ -16,10 +19,10 @@ public class Meal {
     public void setPrice(Double price) {
         this.price = price;
     }
-    public Inreger getWeightInGrams() {
+    public Integer getWeightInGrams() {
         return weightInGrams;
     }
-    public void setWeightInGrams(Inreger weightInGrams) {
+    public void setWeightInGrams(Integer weightInGrams) {
         this.weightInGrams = weightInGrams;
     }
     @Override
@@ -45,4 +48,3 @@ public class Meal {
         return ingredients!= null? ingredients.hashCode() : 0;
     }
 }
-*/
