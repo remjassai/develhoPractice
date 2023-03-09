@@ -39,12 +39,14 @@ public class Student {
         return name;
     }
 
-    public void setAge(int age) {
+    public int setAge(int age) {
         if(age < 0 && age > 130){
             System.out.println("Invalid parameter! Age has to be a positive number les than 131.");
+            return 1;
         }else{
             this.age = age;
         }
+        return age;
     }
 
     public int getAge() {

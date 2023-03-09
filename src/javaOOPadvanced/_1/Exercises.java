@@ -26,8 +26,8 @@ public class Exercises {
         // Your code
 
         ourSet = new HashSet<>();
-//        ourSet.add(1);
-//        ourSet.add(1);
+        ourSet.add(1);
+        ourSet.add(1);
         ourSet.add(5);
         ourSet.add(2);
         ourSet.add(1);
@@ -80,7 +80,7 @@ public class Exercises {
         fruitsSet.add("kiwi");
         fruitsSet.add("mango");
 
-      //  fruitsSet.addAll(fruitsSet);
+        fruitsSet.addAll(fruitsSet);
 
         //2a. What will this output? [It will print the following: apple, banana, orange, kiwi and mango in no particular order.]
         System.out.println(fruitsSet);

@@ -20,12 +20,12 @@ public class Exercises {
         // 1d. Access an element in the map with .get
         // 1e. Remove an element from the map .remove
         // 1f. Print the map again to confirm the element was removed
-        HashMap<Integer, String> mySecondMap = new HashMap<>();
+        Map<Integer, String> mySecondMap = new HashMap<>();
         mySecondMap.put( 1, "One");
         mySecondMap.put( 2, "Two");
         mySecondMap.put( 3, "Three");
         System.out.println(mySecondMap);
-        System.out.println(mySecondMap.get(1));
+        mySecondMap.get(1);
         mySecondMap.remove(2);
         System.out.println(mySecondMap);
     }
