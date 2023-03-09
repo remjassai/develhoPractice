@@ -22,15 +22,6 @@ public class Exercises {
     }
 
     // Use the MY_PATH constant
-/*    try{
-        Files.createFile(file.MY_PATH);
-        Files.writeString(MY_PATH, myString);
-    }catch(Exception exception){
-        System.err.println("There was an error");
-        Exception.printStackTrace();
-        System.exit(0);
-    }*/
-
     /**
      * 1:
      * Write a method that writes myString to a file
