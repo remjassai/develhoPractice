@@ -1,12 +1,14 @@
 package javaOOPadvanced._4;
 
 import javax.lang.model.element.NestingKind;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Exercises {
 
@@ -40,6 +42,8 @@ public class Exercises {
             // Your code here
             Files.write(MY_PATH, myString.getBytes());
 //            System.out.println(MY_PATH);
+//           FileWriter write = new FileWriter(myString);
+//           write.write(String.valueOf(MY_PATH));
         } catch (Exception exception) {
             System.err.println("There was an error!");
             exception.printStackTrace();
@@ -73,14 +77,16 @@ public class Exercises {
     private static void exercise3() throws IOException {
         System.out.println("\nExercise 3: ");
         // Write code here to read the file and return the number of lines "\n", string.split
-        List<String> lines = new ArrayList<String>(List.of(Files.readString(MY_PATH).split("\n")));
+//        List<String> lines = new ArrayList<String>(List.of(Files.readString(MY_PATH).split("\n")));
         try {
+            String[] linesArray = Files.readString(MY_PATH).split("\n");
             // Your code here
-            int count = 0;
-            for (String line: lines) {
-            count++;
-        }
-            System.out.println(lines.size() + " line(s)");
+//            int count = 0;
+//            for (String line: lines) {
+//            count++;
+            System.out.println(linesArray.length);
+//         }
+//            System.out.println(lines.size() + " line(s)");
 
         } catch (Exception exception) {
             System.err.println("There was an error!");
@@ -98,15 +104,17 @@ public class Exercises {
      */
     private static void exercise4() throws IOException {
         System.out.println("\nExercise 4: ");
-        List<String> words = new ArrayList<String>(List.of(Files.readString(MY_PATH).split(" ")));
+//        List<String> words = new ArrayList<String>(List.of(Files.readString(MY_PATH).split(" " )));
         try {
             // Your code here
-            int counter = 0;
-            for (String word : words) {
-                counter++;
-            }
-            System.out.println( counter + " words");
+            String[] wordsArray = Files.readString(MY_PATH).split(" " );
+            System.out.println(wordsArray.length);
             Files.delete(MY_PATH);
+//            int counter = 0;
+//            for (String word : words) {
+//                counter++;
+//        }
+//            System.out.println( counter + " words");
 
         } catch (Exception exception) {
             System.err.println("There was an error!");
