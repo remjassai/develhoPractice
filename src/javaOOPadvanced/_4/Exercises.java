@@ -108,7 +108,7 @@ public class Exercises {
         try {
             // Your code here
             String[] wordsArray = Files.readString(MY_PATH).split(" " );
-            System.out.println(wordsArray.length);
+            System.out.println(wordsArray.length );
             Files.delete(MY_PATH);
 //            int counter = 0;
 //            for (String word : words) {

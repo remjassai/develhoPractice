@@ -1,4 +1,8 @@
-package javaadvanced._6;
+package javaOOPadvanced._6;
+
+import javaOOPadvanced._6.Days;
+import javaOOPadvanced._6.Seasons;
+import javaOOPadvanced._6.TrafficLight;
 
 public class Exercises {
     public static void main(String[] args) {
@@ -6,6 +10,7 @@ public class Exercises {
         exercise2();
         exercise3();
         exercise4();
+        exercise5();
     }
 
     private enum YouCanUseClassLocalEnumsLikeThis {
@@ -24,6 +29,10 @@ public class Exercises {
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
         // Your code here
+        for(Days days: Days.values()) {
+            System.out.println(days);
+        }
+
     }
 
     /**
@@ -38,6 +47,15 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
         // Your code here
+        Seasons seasons = Seasons.FALL;
+        switch (seasons){
+            case WINTER-> System.out.println(seasons.getMonths());
+            case FALL-> System.out.println(seasons.getMonths());
+            case SPRING -> System.out.println(seasons.getMonths());
+            case SUMMER-> System.out.println(seasons.getMonths());
+        }
+
+
     }
 
     /**
@@ -52,8 +70,15 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
         // Your code here
+        getNextLight(TrafficLight.RED);
     }
-
+public static TrafficLight getNextLight(TrafficLight currentLightColor) {
+        switch(currentLightColor){
+            case RED -> System.out.println(currentLightColor.GREEN);
+            case YELLOW -> System.out.println(currentLightColor.RED);
+            case GREEN -> System.out.println(currentLightColor.YELLOW);
+        }
+        return currentLightColor;}
     /**
      * 4:
      *
@@ -64,6 +89,13 @@ public class Exercises {
     private static void exercise4() {
         System.out.println("\nExercise 4: ");
         // Your code here
+        Days myDay = Days.MONDAY;
+       if(myDay.isWeekend()) {
+           System.out.println("It's party time!!!");
+       }else{
+           System.out.println("It's work time!!!");
+       }
+
     }
 
     /**
@@ -78,8 +110,22 @@ public class Exercises {
         System.out.println("\nExercise 5: ");
         // Your code here
 
-        double num1 = 5;
-        double num2 = 2;
+
+        int num1 = 5;
+        int num2 = 2;
+        Operator op1 = Operator.MULTIPLY;
+        opMethod(num1, num2, op1);
+    }
+
+    public static Operator opMethod(int arg1, int arg2, Operator op){
+        switch(op){
+            case ADD-> System.out.println(arg1 + arg2);
+            case SUBTRACT-> System.out.println(arg1 - arg2);
+            case MULTIPLY-> System.out.println(arg1 * arg2);
+            case DIVIDE -> System.out.println(arg1 / arg2);
+        }
+
+        return op;
     }
 
 }
