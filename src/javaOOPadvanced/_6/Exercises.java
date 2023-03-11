@@ -115,7 +115,7 @@ public static TrafficLight getNextLight(TrafficLight currentLightColor) {
         int num2 = 2;
         Operator op1 = Operator.DIVIDE;
         Double result = op1.apply(num1,num2);
-        System.out.println(result);
+        System.out.println("Result as double " + result);
         opMethod(num1, num2, op1);
     }
 
