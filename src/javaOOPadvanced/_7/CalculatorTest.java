@@ -35,7 +35,7 @@ class CalculatorTest {
         Assertions.assertEquals(0, calculator.subtract(5, 5));
         Assertions.assertEquals(10, calculator.subtract(20, 10));
         Assertions.assertEquals(-3, calculator.subtract(0,3));
-        Assertions.assertEquals(-13, calculator.subtract(2,-15));
+        Assertions.assertEquals(-13, calculator.subtract(2,15));
 
 
 
@@ -68,7 +68,8 @@ class CalculatorTest {
 
 
         Assertions.assertEquals(5, calculator.divide(10,2));
-//        Assertions.assertEquals(0,calculator.divide(23,0)); Exception error
+//        Assertions.assertEquals(0,calculator.divide(23,0)); It gives me an exception error
+        Assertions.assertThrows(ArithmeticException.class, () -> calculator.divide(23, 0));
         Assertions.assertEquals(-15, calculator.divide(-30,2));
         Assertions.assertEquals(1, calculator.divide(30,30));
         Assertions.assertEquals(0, calculator.divide(0,23));
@@ -88,7 +89,7 @@ class CalculatorTest {
      */
     @Test
     void exercise3() {
-        System.out.println("\nExercise 3: ");
+        System.out.println("\nExercΩ<ise 3: ");
         // Your code here
         Calculator calculator = new Calculator();
         Assertions.assertEquals(1,calculator.power(5,0));
