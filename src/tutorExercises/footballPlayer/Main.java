@@ -1,7 +1,5 @@
-package tutorExercies.footballPlayer;
+package tutorExercises.footballPlayer;
 import java.util.HashSet;
-import java.util.Map;
-import java.util.HashMap;
 
 public class Main {
     //start 14:33

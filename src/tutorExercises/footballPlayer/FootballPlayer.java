@@ -1,4 +1,4 @@
-package tutorExercies.footballPlayer;
+package tutorExercises.footballPlayer;
 
 public class FootballPlayer {
     //fields

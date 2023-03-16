@@ -26,7 +26,7 @@ Implementare infine il seguente metodo:
 - printTeam() : stampa riga per riga nome e cognome di ogni giocatore.
 - addPlayer(FootballPlayer p) : aggiunge il giocatore p al team.
 
-3) Creare una classe Main nella quale:
+3) Creare una classe src.tutorExercises.Ereditarieta.ereditarieta.Main nella quale:
 a) Istanziare 5 variabili di tipo FootballPlayer (con parametri a scelta) e inserire
 3 di loro in un insieme.
 b) Istanziare un oggetto di tipo Team teamA passando come parametro al costruttore l'insieme
@@ -71,7 +71,7 @@ with corresponding getters and setters.
 Finally, implement the following method:
 printTeam() : print line by line first and last name of each player.
 addPlayer(FootballPlayer p) : adds player p to the team.
-Create a Main class in which to:
+Create a src.tutorExercises.Ereditarieta.ereditarieta.Main class in which to:
 a) Instantiate 5 variables of type FootballPlayer (with parameters of your choice) and insert 3 of them into a set.
 b) Instantiate an object of type Team teamA by passing the newly created set as a parameter to the constructor.
 c) Instantiate an object of type Team teamB using the constructor without the input set and then add the other 2 players to it with the addPlayer method.
