@@ -1,4 +1,4 @@
-package Challenges;
+package Challenges.argCollections;
 
 public class Student {
     private String name;

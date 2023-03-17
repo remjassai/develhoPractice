@@ -1,4 +1,4 @@
-package Challenges;
+package Challenges.argCollections;
 
 import java.util.Collections;
 import java.util.List;
