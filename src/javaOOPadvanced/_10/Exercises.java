@@ -1,4 +1,4 @@
-package javaoopadvanced._3;
+package javaOOPadvanced._10;
 
 public class Exercises {
 
@@ -19,6 +19,8 @@ public class Exercises {
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
         // Your code here
+        Person Rem = new Person("Rem",23,"Via Gli Astemi");
+        System.out.println(Rem);
     }
 
     /**
@@ -32,8 +34,13 @@ public class Exercises {
      * Create 2 people and print out their hashcodes
      */
     private static void exercise2() {
-        System.out.println("\nExercise 1: ");
+        System.out.println("\nExercise 2: ");
         // Your code here
+        Person person1 = new Person("Giulia", 30,"Via LeManiDalQL");
+        Person person2 = new Person("Bob",33,"Via LiberAlErba");
+        System.out.println(person1.hashCode());
+        System.out.println(person2.hashCode());
+
     }
 
     /**
