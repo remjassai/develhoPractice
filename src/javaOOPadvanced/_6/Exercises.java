@@ -4,6 +4,10 @@ import javaOOPadvanced._6.Days;
 import javaOOPadvanced._6.Seasons;
 import javaOOPadvanced._6.TrafficLight;
 
+import java.util.Scanner;
+
+import static javaOOPadvanced._6.Seasons.*;
+
 public class Exercises {
     public static void main(String[] args) {
         exercise1();
@@ -47,7 +51,17 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
         // Your code here
-        Seasons seasons = Seasons.FALL;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a season (SPRING, SUMMER, FALL, WINTER): ");
+        String input = scanner.nextLine().toUpperCase();
+
+        Seasons seasons;
+        try {
+            seasons = Seasons.valueOf(input);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Invalid input, please try again.");
+            return;
+        }
         switch (seasons){
             case WINTER-> System.out.println(seasons.getMonths());
             case FALL-> System.out.println(seasons.getMonths());
@@ -115,8 +129,8 @@ public static TrafficLight getNextLight(TrafficLight currentLightColor) {
         int num2 = 2;
         Operator op1 = Operator.DIVIDE;
         Double result = op1.apply(num1,num2);
-        System.out.println("Result as double " + result);
-        opMethod(num1, num2, op1);
+        System.out.println("Result as double: " + result);
+        System.out.println("Result as int: "+opMethod(num1, num2, op1));
     }
 
     public static Operator opMethod(int arg1, int arg2, Operator op){
