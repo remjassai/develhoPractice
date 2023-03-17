@@ -1,4 +1,4 @@
-package javaoopadvanced._2;
+package javaOOPadvanced._9;
 
 public class Exercises {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Exercises {
      *
      * Create an abstract class called "Shape" with fields of height and width
      *
-     * Create classes called "Rectangle" and "Circle" that extend the GeometricShape class and implement the calculateArea() method.
+     * Create classes called "Rectangle" and "Circle" that extend the Shape class and implement the calculateArea() method.
      *
      * Create instances of both and calculate their area
      *
@@ -22,6 +22,9 @@ public class Exercises {
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
         // Your code here
+        Circle circle = new Circle(1,1);
+        System.out.println(circle.calculateArea());
+ //       System.out.println(Math.PI * Math.pow((1.0/2), 2));
     }
 
     /**
@@ -37,6 +40,12 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
         // Your code here
+        Car tesla = new Car();
+        tesla.moveBackward();
+        tesla.moveForward();
+        Boat riot = new Boat();
+        riot.moveBackward();
+        riot.moveForward();
     }
 
     /**
@@ -54,5 +63,10 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
         // Your code here
+        Guitar furch = new Guitar("Jassai","Furch");
+        furch.play();
+        Piano schimmel = new Piano("neverDie","Schimmel");
+        schimmel.play();
+
     }
 }
