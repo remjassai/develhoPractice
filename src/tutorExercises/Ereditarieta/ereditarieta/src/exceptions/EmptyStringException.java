@@ -1,4 +1,4 @@
-package tutorExercises.Ereditarietà.ereditarieta.src.exceptions;
+package tutorExercises.Ereditarieta.ereditarieta.src.exceptions;
 
 public class EmptyStringException extends Exception {
 

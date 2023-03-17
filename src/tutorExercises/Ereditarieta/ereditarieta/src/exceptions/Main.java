@@ -1,4 +1,4 @@
-package tutorExercises.Ereditarietà.ereditarieta.src.exceptions;
+package tutorExercises.Ereditarieta.ereditarieta.src.exceptions;
 
 import java.util.Scanner;
 

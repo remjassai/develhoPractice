@@ -1,6 +1,4 @@
-package persone;
-
-import persone.Persona;
+package tutorExercises.Ereditarieta.ereditarieta.src.persone;
 
 public class Professore extends Persona {
 

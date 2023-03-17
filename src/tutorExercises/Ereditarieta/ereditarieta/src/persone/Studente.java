@@ -1,6 +1,4 @@
-package persone;
-
-import persone.Persona;
+package tutorExercises.Ereditarieta.ereditarieta.src.persone;
 
 public class Studente extends Persona {
 
@@ -20,6 +18,17 @@ public class Studente extends Persona {
     }
 
     public void stampaNomeCognome() {
-        System.out.println(this.nome);
+        System.out.println(this.nome + this.cognome);
+    }
+
+
+    public String toString() {
+        return "Studente{" +
+                "matricola=" + matricola +
+                ", nome='" + nome + '\'' +
+                ", cognome='" + cognome + '\'' +
+                ", eta=" + eta +
+                ", codiceFiscale='" + codiceFiscale + '\'' +
+                '}';
     }
 }

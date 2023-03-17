@@ -1,4 +1,4 @@
-package persone;
+package tutorExercises.Ereditarieta.ereditarieta.src.persone;
 
 public class Persona {
 
