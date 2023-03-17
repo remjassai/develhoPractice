@@ -2,6 +2,7 @@ package javaOOPadvanced._7;
 
 // You can change any code in this class if you think there is a bug!
 public class Calculator {
+
     public int add(int a, int b) {
         return a + b;
     }
