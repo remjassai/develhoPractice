@@ -1,7 +1,8 @@
-package javaoopadvanced._1;
+package javaOOPadvanced._8;
 
 class Animal {
-    private double height, weight;
+    private double height, weight, speed;
+    private String name;
 
     public Animal(double height, double weight) {
         this.height = height;
@@ -22,5 +23,21 @@ class Animal {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
