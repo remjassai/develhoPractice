@@ -1,0 +1,3 @@
+Product(name=Jassao, price=3000.0),1
+Product(name=Jassai, price=2500.0),1
+Product(name=Meravigliao, price=1000.0),1
