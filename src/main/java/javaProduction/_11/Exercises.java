@@ -1,8 +1,8 @@
 package javaProduction._11;
-import java.math.RoundingMode;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.MathContext;
 
 public class Exercises {
 
@@ -85,7 +85,9 @@ public class Exercises {
         bigIntDivisionResult = myBigInt.divide(BigInteger.valueOf(3));
         System.out.println(bigIntDivisionResult);
         BigDecimal myBigDecimal = new BigDecimal("2.222222222222222222222222222222222222222222222222");
-        BigDecimal bigDecimalDivisionResult = myBigDecimal.divide(BigDecimal.valueOf(Math.PI), 50, RoundingMode.HALF_UP);
+//        BigDecimal bigDecimalDivisionResult = myBigDecimal.divide(BigDecimal.valueOf(Math.PI), 50, RoundingMode.HALF_UP);
+        BigDecimal pi = new BigDecimal(Math.PI);
+        BigDecimal bigDecimalDivisionResult = myBigDecimal.divide(pi, MathContext.DECIMAL128);
         System.out.println(bigDecimalDivisionResult);
     }
 
