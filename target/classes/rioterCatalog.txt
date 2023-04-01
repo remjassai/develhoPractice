@@ -1,0 +1,4 @@
+Pijamask,60.0,null,1
+NightCap,35.0,SLEEPWEAR,1
+Teneshi,30.0,null,1
+Socks,12.0,null,1
