@@ -26,24 +26,28 @@ public class Article extends Product implements Discount {
         return id;
     }
     public String getDescription(){
-        return description;
+        return productType.getDescription();
     }
 
     public ProductType getType() {
-        return productType;
+        return this.productType;
     }
 
 
     public double getDiscount() {
-        return discount;
+        return this.discount;
     }
 
     public void setProductType(ProductType productType) {
         this.productType = productType;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public void printInfo(){
-        System.out.println("Product ID: " + this.id + ", Name: "+ this.name+ ", " + getType()+ ", " + getDescription() + ", Price: " + this.getPrice() + "€");
+        System.out.println("Product ID: " + this.id + ", Name: "+ this.name+ ", " + this.productType+ ", " + this.description + ", Price: " + this.getPrice() + "€");
     }
 
     @Override

@@ -22,28 +22,39 @@ public class Main {
         myShop.saveCatalog("src/main/resources/myFile.csv");
 
         Shop rioter = new Shop("RioteR");
-        rioter.loadCatalog("src/main/resources/myFile.csv");
         Article article4 = new Article("Teneshi", 30.00);
         Article article5 = new Article("Pijamask", 60.00);
         Article article6 = new Article("NightCap", 35.00);
-        Article article7 = new Article("Socks", 12.00);
-
-        rioter.addArticle(article4, article5, article6, article7);
+        Article article7 = new Article("Knickers", 12.00);
 
 
+        rioter.addArticle(article4, article5, article6, article7, article7);
 
-        article4.applyDiscount(20.00);
-        article5.applyDiscount(10.00);
-        article6.applyDiscount(15.00);
-        article4.calculateDiscountPrice();
-        article5.calculateDiscountPrice();
-        System.out.println("With this discount of " + article6.getDiscount()+ "% the Nightcap cost is just: " + article6.calculateDiscountPrice()+ "€ instead of: " + article6.getPrice()+ "€");
+
+
+        rioter.getArticle("Teneshi").applyDiscount(20.00);
+        rioter.getArticle("Pijamask").applyDiscount(10.00);
+        rioter.getArticle("NightCap").applyDiscount(15.00);
+        rioter.getArticle("Teneshi").calculateDiscountPrice();
+        rioter.getArticle("Pijamask").calculateDiscountPrice();
+        rioter.getArticle("NightCap").calculateDiscountPrice();
+        System.out.println("With this discount of " + rioter.getArticle("NightCap").getDiscount()+ "% the Nightcap cost is just: " + article6.calculateDiscountPrice()+ "€ instead of: " + article6.getPrice()+ "€");
+        rioter.getArticle("Teneshi").setProductType(ProductType.FOOTWEAR);
+        rioter.getArticle("Pijamask").setProductType(ProductType.SLEEPWEAR);
         rioter.getArticle("NightCap").setProductType(ProductType.SLEEPWEAR);
-        rioter.getArticle("NightCap").printInfo();
+        rioter.getArticle("Knickers").setProductType(ProductType.UNDERWEAR);
+        rioter.getArticle("Teneshi").setDescription(ProductType.FOOTWEAR.getDescription());
+        rioter.getArticle("Pijamask").setDescription(ProductType.SLEEPWEAR.getDescription());
+        rioter.getArticle("NightCap").setDescription(ProductType.SLEEPWEAR.getDescription());
+        rioter.getArticle("Knickers").setDescription(ProductType.UNDERWEAR.getDescription());
+
+        rioter.getArticle("Teneshi").printInfo();
 
 
         rioter.saveCatalog("src/main/resources/rioterCatalog.txt");
-        rioter.loadCatalog("src/main/resources/rioterLoadedCatalog.txt");
+
+        System.out.println(rioter.loadCatalog("src/main/resources/rioterCatalog.txt"));
+
 
         rioter.addArticle(article4);
         rioter.addArticle(article5);
