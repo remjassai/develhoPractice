@@ -53,7 +53,7 @@ public class Main {
 
         rioter.saveCatalog("src/main/resources/rioterCatalog.txt");
 
-        System.out.println(rioter.loadCatalog("src/main/resources/rioterCatalog.txt"));
+
 
 
         rioter.addArticle(article4);
@@ -67,8 +67,11 @@ public class Main {
         rioter.removeArticle(article7, article7);
         System.out.println(rioter.getCatalog());
 
+
         System.out.println(rioter.loadCatalog("src/main/resources/myFile.csv"));
 
+        Shop newShop = new Shop("Riot's new Shop");
+        newShop.loadCatalog("src/main/resources/rioterCatalog.txt");
 
     }
 
