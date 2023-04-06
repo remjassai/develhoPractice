@@ -64,7 +64,7 @@ public class Main {
         rioter.addArticle(article7);
         rioter.addArticle(article7);
         System.out.println(rioter.getCatalog());
-        rioter.removeArticle(article7, article7);
+        rioter.removeArticle(article7);
         System.out.println(rioter.getCatalog());
 
 
@@ -73,6 +73,17 @@ public class Main {
         Shop newShop = new Shop("Riot's new Shop");
         newShop.loadCatalog("src/main/resources/rioterCatalog.txt");
 
+        //Get the list of all products of type "UNDERWEAR"
+//        rioter.getCatalog().keySet().stream().forEach(a-> )
+//                rioter.getCatalog().entrySet().
+
+
+
+
     }
+
+
+
+
 
 }
